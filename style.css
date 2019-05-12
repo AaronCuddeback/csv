@@ -2543,6 +2543,9 @@ body {
 /**
  * 9.1 - Logo
  */
+
+
+
 .logo {
     color: #9a9da2 !important;
     font-size: 30px;
@@ -2578,8 +2581,21 @@ body {
 @media (max-width: 767px) {
     .logo {
         margin-top: 0;
+        font-size: 30px;
     }
 }
+
+@media (max-width: 1170px) {
+    a.logo {
+        font-size: 18px;
+    }
+   
+    a.logo span {
+        font-size: 20px;
+    }
+}
+
+
 
 /**
  * 9.2 - Navigation

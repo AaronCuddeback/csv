@@ -1,5 +1,5 @@
 <?php 
-	$emailTo = "email@sitename.com"; // Enter your email for feedbacks here 	
+	$emailTo = "aaron.cuddeback@outlook.com"; // Enter your email for feedbacks here 	
 	$name = $_POST['name'];
 	$email = $_POST['email'];
 	$subject = $_POST['subject'];
@@ -10,7 +10,7 @@
 	$headers .= "From: {$name} <{$email}>" . "\r\n";
 	
 	if (!isset($subject)) {
-		$subject = "Contact form message"; // Enter your subject here
+		$subject = "Contact from online CSV"; // Enter your subject here
 	}
 		
 	$body = "";
@@ -21,5 +21,5 @@
 	$body .= "<p><strong>Message:</strong><br/> $message</p>";
 	
 	$result = mail($emailTo, $subject, $body, $headers); //This method sends the mail.
-	echo "Your email was sent successfully!"; // Success message
+	echo "Your email was sent successfully, I look forward to contacting you!"; // Success message
 ?>
